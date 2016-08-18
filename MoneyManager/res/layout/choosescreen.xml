@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#08a62e"
+    android:orientation="vertical" >
+    
+    
+	<RelativeLayout
+        android:id="@+id/bac_dim_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#C0000000"
+        android:visibility="gone" >
+</RelativeLayout>
+
+	<RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="150dp"
+	    android:layout_alignParentLeft="true"
+	    android:layout_centerVertical="true" >
+
+	    <TextView
+	        android:id="@+id/textView1"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginLeft="17dp"
+	        android:layout_marginTop="14dp"
+	        android:text="Language"
+	        android:textStyle="bold" 
+	        android:textColor="#FFFFFF"/>
+
+	    <RadioGroup
+	        android:id="@+id/edittext1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="60dp"
+	        android:layout_alignRight="@+id/btnok"
+	        android:layout_below="@+id/textView1"
+	        android:layout_marginTop="5dp"
+	        android:orientation="vertical"
+	        android:textColor="#FFFFFF" >
+
+	        <RadioButton
+	            android:id="@+id/radioVN"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="36dp"
+	            android:checked="true"
+	            android:text="Vietnamese"
+	            android:textStyle="bold"
+	            android:textColor="#FFFFFF" />
+
+	        <RadioButton
+	            android:id="@+id/radioEN"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentBottom="true"
+	            android:layout_alignParentLeft="true"
+	            android:layout_marginLeft="36dp"
+	            android:text="English"
+	            android:textStyle="bold"
+	            android:textColor="#FFFFFF" />
+	    </RadioGroup>
+
+	    <Button
+	        android:id="@+id/btnok"
+	        android:layout_width="wrap_content"
+	        android:layout_height="30dp"
+	        android:layout_alignParentBottom="true"
+	        android:layout_centerHorizontal="true"
+	        android:background="@drawable/buttonpopup"
+	        android:text="OK"
+	        android:textColor="#f8f3f3"
+	        android:textSize="13dp" />
+	</RelativeLayout>
+
+</RelativeLayout>

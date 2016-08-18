@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#00000000"
+    android:orientation="vertical"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#FFFFFFFF" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="14dp"
+            android:text="Language"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnok"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="190dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/buttonpopup"
+            android:text="OK"
+            android:textColor="#f8f3f3"
+            android:textSize="13dp" />
+
+        <Button
+            android:id="@+id/btnhuy"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignTop ="@+id/btnok"
+            android:layout_alignRight="@+id/btnok"
+            android:layout_marginRight="80dp"
+            android:background="@drawable/buttonpopup"
+            android:text="Cancle"
+            android:textColor="#f8f3f3"
+            android:textSize="13dp" />
+
+        <RadioGroup
+            android:id="@+id/edittext1"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_alignRight="@+id/btnhuy"
+            android:layout_below="@+id/textView1"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical" >
+
+            <RadioButton
+                android:id="@+id/radioVN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="36dp"
+                android:checked="true"
+                android:text="Vietnamese"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/radioEN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="36dp"
+                android:text="English"
+                android:textStyle="bold" />
+        </RadioGroup>
+
+    </RelativeLayout>
+
+</LinearLayout>

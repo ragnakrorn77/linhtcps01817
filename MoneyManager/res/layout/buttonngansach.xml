@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#E7E3E3">
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#FFFFFF"
+        android:paddingLeft="5dp" >
+
+        <TextView
+            android:id="@+id/txtNganSach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="8dp"
+            android:text="Tiết Kiệm"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtTien"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtNganSach"
+            android:layout_below="@+id/txtNganSach"
+            android:layout_marginTop="3dp"
+            android:text="30000"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/currency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txtTien"
+            android:layout_alignBottom="@+id/txtTien"
+            android:layout_toRightOf="@+id/txtTien"
+            android:layout_marginLeft="5dp"
+            android:text="đ"
+            android:textSize="16dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="10dp" 
+    android:paddingRight="10dp"
+    android:background="#D0CDCD">
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginTop="10dp" 
+        android:background="@drawable/normal">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/savemoney"
+            android:layout_marginTop="21dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/imageView1"
+            android:text="Tiết Kiệm"
+            android:textSize="16dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_below="@+id/textView1"
+            android:text="Ngân Sách : 0 đ" />
+		<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/topstroke" 
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_alignParentBottom="true">
+		
+		<RelativeLayout
+		    android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingTop="1dp" >
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Nạp Tiền"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="#028d05"/>
+        </RelativeLayout>
+		<View 
+		    android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/rightstroke"
+            android:layout_marginTop="1dp"
+		    />
+        <RelativeLayout
+		    android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingTop="1dp" >
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:text="Rút Tiền"
+            android:textStyle="bold"
+            android:textColor="#b50101"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+    
+		
+		
+		
+    </RelativeLayout>
+
+    <Button
+            android:id="@+id/report"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custombutton"
+            android:text="Thống Kê"
+            android:textColor="#f8f3f3"
+            android:textSize="16dp" />
+    
+</LinearLayout>
